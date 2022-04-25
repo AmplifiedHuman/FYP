@@ -1,6 +1,7 @@
 #!/bin/bash
 docker start client
 docker start firewall
+docker start snort
 ovs-docker del-port ovs-br1 eth1 client
 ovs-docker add-port ovs-br1 eth1 client --ipaddress=192.168.0.2/24
 ovs-docker del-port ovs-br1 eth1 firewall
