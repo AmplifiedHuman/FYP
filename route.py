@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from numpy import source
 from scapy.all import *
 from scapy.sendrecv import sendp, sniff
 import sys
