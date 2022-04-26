@@ -24,7 +24,7 @@ def start():
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print(
-            "Usage: python3 route.py <source_interface> <normal_destination> <icmp_destination>")
+            "Usage: python3 firewall.py <source_interface> <normal_destination> <icmp_destination>")
     else:
         source_interface = sys.argv[1]
         normal_destination = sys.argv[2]
