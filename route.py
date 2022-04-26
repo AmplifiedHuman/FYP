@@ -16,7 +16,7 @@ def start():
     sniff(iface=source_interface, prn=send_packets)
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         print(
             "Usage: python3 route.py <source_interface> <destination_interface>")
     else:
