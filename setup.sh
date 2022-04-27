@@ -11,9 +11,9 @@ ovs-docker del-port ovs-br2 eth2 firewall
 ovs-docker add-port ovs-br2 eth2 firewall --ipaddress=192.168.1.2/24
 ovs-docker del-port ovs-br3 eth3 firewall
 ovs-docker add-port ovs-br3 eth3 firewall --ipaddress=192.168.2.4/24
-ovs-docker del-port ovs-br2 eth2 snort
-ovs-docker add-port ovs-br2 eth2 snort --ipaddress=192.168.1.3/24
-ovs-docker del-port ovs-br3 eth3 snort
-ovs-docker add-port ovs-br3 eth3 snort --ipaddress=192.168.2.2/24
+ovs-docker del-port ovs-br2 eth2 snort2
+ovs-docker add-port ovs-br2 eth2 snort2 --ipaddress=192.168.1.3/24
+ovs-docker del-port ovs-br3 eth3 snort2
+ovs-docker add-port ovs-br3 eth3 snort2 --ipaddress=192.168.2.2/24
 ovs-docker del-port ovs-br3 eth3 suricata
 ovs-docker add-port ovs-br3 eth3 suricata --ipaddress=192.168.2.3/24
