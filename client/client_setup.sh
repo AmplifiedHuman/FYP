@@ -1,2 +1,2 @@
 ip link set eth1 promisc on
-ethtool -K eth1 gro off lro off
+ethtool -K eth1 gro off lro off tso off gso off
