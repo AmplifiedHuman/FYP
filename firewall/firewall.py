@@ -12,9 +12,9 @@ filter_function = None
 
 def send_packets(packet):
     if ICMP in packet:
-        sendp(packet, icmp_destination)
+        sendpfast(x=packet, iface=icmp_destination)
     else:
-        sendp(packet, normal_destination)
+        sendpfast(x=packet, iface=normal_destination)
 
 
 def start():

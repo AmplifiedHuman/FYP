@@ -9,7 +9,7 @@ destination_interface = ''
 filter_function = None
 
 def send_packets(packet):
-    sendp(packet, destination_interface)
+    sendpfast(x=packet, iface=destination_interface)
 
 
 def start():
